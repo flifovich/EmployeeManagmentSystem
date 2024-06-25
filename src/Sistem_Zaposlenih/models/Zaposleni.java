@@ -109,6 +109,7 @@ public class Zaposleni implements Model {
             ResultSet rs = pst.executeQuery();
             if (rs.next()) {
                 return new Zaposleni(
+                        
                     rs.getInt("id"),
                     rs.getString("ime"),
                     rs.getString("prezime"),
